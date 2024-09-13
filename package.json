@@ -1,0 +1,97 @@
+{
+  "name": "react-native-spotlight-tour",
+  "version": "3.0.2",
+  "description": "React Native library to implement a highly customizable app tour feature with an awesome spotlight effect",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:thonyromes/react-native-spotlight-tour-nativewind.git"
+  },
+  "homepage": "https://stackbuilders.github.io/react-native-spotlight-tour/",
+  "bugs": "https://github.com/stackbuilders/react-native-spotlight-tour/issues",
+  "author": "Stack Builders <info@stackbuilders.com> (https://github.com/stackbuilders)",
+  "license": "MIT",
+  "keywords": [
+    "app-tour",
+    "android",
+    "customizable",
+    "ios",
+    "react-native",
+    "step-by-step",
+    "spotlight",
+    "spotlight-tour",
+    "tour",
+    "user-guide"
+  ],
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "react-native": "./src/main.ts",
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.prod.json",
+    "check": "yarn compile && yarn test --run",
+    "compile": "tsc",
+    "docs": "typedoc",
+    "release": "semantic-release",
+    "test": "vitest"
+  },
+  "packageManager": "yarn@3.6.3",
+  "dependencies": {
+    "@floating-ui/react-native": "^0.10.6",
+    "react-fast-compare": "^3.2.2",
+    "react-native-responsive-dimensions": "^3.1.1",
+    "styled-components": "^6.1.11"
+  },
+  "devDependencies": {
+    "@assertive-ts/core": "^2.1.0",
+    "@assertive-ts/sinon": "^1.0.0",
+    "@testing-library/react-native": "^12.5.1",
+    "@types/node": "^20.14.10",
+    "@types/react-test-renderer": "^18.3.0",
+    "@types/sinon": "^17.0.3",
+    "expect-type": "^0.19.0",
+    "react": "^18.3.1",
+    "react-is": "^18.3.1",
+    "react-native": "0.74.3",
+    "react-native-svg": "^15.4.0",
+    "react-native-testing-mocks": "^1.4.1",
+    "react-test-renderer": "^18.3.1",
+    "semantic-release": "^24.0.0",
+    "semantic-release-yarn": "^3.0.2",
+    "sinon": "^18.0.0",
+    "typedoc": "^0.26.4",
+    "typedoc-plugin-markdown": "^4.2.1",
+    "typedoc-plugin-merge-modules": "^6.0.0",
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "react-native": ">=0.50.0",
+    "react-native-svg": ">=12.1.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "react-native": {
+      "optional": false
+    },
+    "react-native-svg": {
+      "optional": false
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
